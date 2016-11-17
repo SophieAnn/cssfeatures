@@ -1,4 +1,4 @@
 # cssfeatures
 
-.stylelintrc
+### .stylelintrc
 lint configuration for postcss stylelint
