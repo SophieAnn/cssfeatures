@@ -1,0 +1,40 @@
+{
+  "extends": "stylelint-config-standard",
+  "ignoreDisables": true,
+  "rules": {
+    "property-no-unknown": [ true, {
+      "ignoreProperties": [
+        "lost-column",
+        "lost-align",
+        "lost-center",
+        "lost-utility",
+        "lost-offset"
+      ]
+    }],
+    "string-quotes": double,
+    "declaration-block-properties-order": [
+      "background",
+      "background-color",
+      "font-family",
+      "font-size",
+      "@add-mixin font-size",
+      "font-weight",
+      "text-transform",
+      "color",
+    ],
+    "declaration-empty-line-before": "never",
+    "max-nesting-depth": 4,
+    "declaration-no-important": true,
+    "selector-root-no-composition": true,
+    "no-browser-hacks": true,
+    "no-unsupported-browser-features": [ true, {
+      "browsers": "last 1 version",
+      ignore: ["font-unicode-range"]
+    }],
+    "at-rule-empty-line-before": ["always", {
+      except: ["all-nested", "blockless-after-same-name-blockless", "blockless-group"],
+      ignore: ["after-comment"]
+    }],
+    "selector-list-comma-newline-after": "always-multi-line"
+  }
+}
